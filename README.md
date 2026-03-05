@@ -203,4 +203,4 @@ python app.py
 
 ## License
 
-Add your project license here (MIT, Apache-2.0, etc.).
+MIT
