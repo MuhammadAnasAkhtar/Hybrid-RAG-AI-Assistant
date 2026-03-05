@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyper Drag Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+
+<div class="background-animation"></div>
+
+<div class="main-container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1 class="floating-title">✨ Hyper Drag Assistant Theme ✨</h1>
+        <div class="theme-panel">
+            <button onclick="setTheme('dark')">Dark</button>
+            <button onclick="setTheme('light')">Light</button>
+            <button onclick="setTheme('neon')">Neon</button>
+            <button onclick="setTheme('royal')">Royal</button>
+        </div>
+        <div class="utc-clock" id="utcClock"></div>
+    </div>
+
+    <!-- FEATURE DASHBOARD -->
+    <div class="dashboard">
+        <div class="card">📂 Multiple Document Upload</div>
+        <div class="card">⚡ Hybrid AI Retrieval</div>
+        <div class="card">🧠 Cross-Encoder Reranking</div>
+        <div class="card">🌍 100% Local & Secure</div>
+        <div class="card">🎨 Multi Theme Support</div>
+        <div class="card">🕒 Live UTC Timestamp</div>
+    </div>
+
+    <!-- UPLOAD -->
+    <div class="upload-section glass">
+        <input type="file" id="pdfFile" multiple>
+        <button onclick="uploadPDF()">Upload Documents</button>
+        <p id="uploadStatus"></p>
+    </div>
+
+    <!-- CHAT SECTION -->
+    <div class="chat-section glass">
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="input-section">
+            <input type="text" id="userInput" placeholder="Ask your intelligent question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
